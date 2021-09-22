@@ -1,0 +1,269 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100vh;
+}
+body{
+     background-color:black;
+}
+.header {
+     background: url(cristiano-ronaldo-portugal-computer-720P-wallpaper.jpg) no-repeat 50% 50%;
+     background-size: cover;
+     background-position: top;
+     min-height: 100vh;
+}
+.toggle-btn {
+     position:sticky;
+     float:right;
+     margin: 1.4em;
+     padding: 1em;
+     width: 40px;
+     height: 12px;
+     right: 0;
+     z-index: 1;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     cursor: pointer;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 12px;
+     cursor: pointer;
+}
+span{
+     cursor:pointer;
+}
+
+.menu {
+     z-index: 0;
+     position: absolute;
+     background: #101010;
+     height: 100vh;
+     width: 100%;
+     top: -100%;
+}
+
+.data {
+     padding: 8em 0 0 2em;
+     text-align: left;
+}
+
+ul {
+     list-style: none;
+}
+
+li:first-child {
+     color: grey;
+     font-family: 'Poppins';
+     font-size:42px;
+}
+
+li:not(:first-child) {
+     color: #fff;
+     font-size: 42px;
+}
+li:hover a{
+     color:Grey;
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+     font-family: Poppins;
+}
+.logo img{
+     width:130px;
+     top:10px;
+     position:absolute;
+     left:50px;
+}
+.about{
+     min-height:60vh;
+     width:100%;
+
+     
+}
+h1{
+     font-size:1.3em;
+     color:white;
+     text-align: left;
+     margin-left:90px;
+     
+     font-family: 'Spartan', sans-serif;
+     margin-top:90px;
+     font-weight: bold;
+}
+
+.first,.second,.third{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+}
+.first img,.second img,.third img{
+     width:200px;
+     opacity:0.6;
+     cursor:pointer;
+}
+.first img:hover,.second img:hover,.third img:hover{
+     opacity:1;
+}
+.awards{
+     width:100%;
+     min-height:100vh;
+     font-family: 'Spartan', sans-serif;
+     font-weight: bold;
+}
+
+.inside p{
+     color:white;
+}
+.inside{
+     display:flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+
+.firsts,.seconds{
+     display:flex;
+     justify-content:space-around;
+     padding:100px;
+     padding-bottom:10px;
+}
+.hoho{
+     display:flex;
+     
+}
+.paragraphs{
+     flex-direction: column;
+     font-size:10px;
+}
+
+.seconds{
+     padding-left:80px;
+
+}
+.photos{
+     min-height: 100vh;
+     width:100%;
+     text-align: center;
+     padding:100px 0px;
+}
+.photos img{
+     padding:30px;
+     width:400px;
+     opacity:0.7;
+}
+.photos img:hover{
+     opacity:1;
+}
+.images{
+     margin-top:100px;
+}
+
+.social{
+     min-height: 100vh;
+     width:100%;
+     color:white;
+     font-family: 'Spartan', sans-serif;
+     font-weight: bold;
+}
+
+.box{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border:1px solid #111111;
+     margin:150px 230px;
+     padding:60px;
+     background-color: #111111;
+
+}
+.box h2{
+     letter-spacing:2px;
+     font-size:2.3em;
+     margin-top:10px;
+}
+.box p{
+     font-size:.9em;
+     margin-bottom: 50px;
+}
+button{
+     border-radius: 50px;
+     border:none;
+     padding:17px;
+     width:400px;
+     background-color: #F54F00;
+     color:#fde8df;
+     margin-top:30px;
+     font-weight: bold;
+     font-size:17px;
+     cursor:pointer;
+}
+
+input {
+     width:360px;
+     border-radius: 50px;
+     padding:17px;
+     border:0;
+     outline:0;
+     border:1px solid white;
+     background-color: #151515;
+     color:white;
+}
+input:focus {
+     outline:none!important;
+}
+input::placeholder{
+     text-align: center;
+}
+.icons{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.icons .fab{
+     width:40px;
+     height:20px;
+     color:white;
+     font-size:23px;
+     padding:0 10px;
+     border-radius:90%;
+     opacity: .8;
+}
+.icons .fab:hover{
+     color:grey;
+}
+
+@media (max-width:760px){
+     .first,.second,.third{
+          flex-direction: column;
+     }
+     .firsts,.seconds{
+          flex-direction: column;
+     }
+     img{
+          max-width: 90%;
+     }
+     .box{
+          padding:0;
+          margin:0;
+          margin-bottom:20px;
+          text-align: center;
+     }
+     input,button{
+          max-width: 90%;
+     }
+ }
